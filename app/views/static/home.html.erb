@@ -1,2 +1,11 @@
-<h1>Static#home</h1>
-<p>Find me in app/views/static/home.html.erb</p>
+<h1>Quizzer App</h1>
+
+<div class="center hero-unit">
+	<p>
+		<%= I18n.t 'home', default: 'Principal' %> kb motherfucker
+	</p>
+	<% $signup = I18n.t 'signup', default: 'Únete ahora' %>
+	<%= link_to $signup, signup_path, class: "btn btn-large btn-primary" %>
+</div>
+	<%= link_to image_tag("logo.png", alt: "Rails"), 'http://rubyonrails.org/'%>
+
